@@ -26,12 +26,16 @@
 - [ ] As an owner I want to edit a board name and description to keep it up to date
 - [ ] As an owner I want to delete a board to remove projects that are no longer active
 - [ ] As an owner I want to archive a board to keep it accessible without cluttering the workspace
+- [ ] As an owner I want to generate a shareable invite link to a board to allow users to join without going through the admin
+- [ ] As an owner I want the invite link to expire after a set time or number of uses to keep the board secure
+- [ ] As a user I want to join a board via a shareable link to access it without the admin manually assigning me
 
 ---
 
 ## Columns
 
 - [ ] As an owner or admin I want to create custom columns to adapt the board to my workflow
+- [ ] As an owner or admin I want to edit a column name to rename it without deleting it
 - [ ] As an owner or admin I want to reorder columns to adapt the board layout to my workflow
 - [ ] As an owner or admin I want to delete a column to remove steps that are no longer needed
 
@@ -43,14 +47,17 @@
 - [ ] As a user I want to move a card from one column to another to update its progress if my role allows it
 - [ ] As a user I want to add a description to a card to give more context
 - [ ] As a user I want to add a due date to a card to track deadlines
+- [ ] As a user I want to edit or remove a due date on a card to update the timeline
 - [ ] As a user I want to assign a card to a user to know who is responsible
+- [ ] As a user I want to add a tag to a card to categorise it
+- [ ] As a user I want to remove a tag from a card to keep it organised
 - [ ] As a user I want to archive a card to keep the board clean without losing data if my role allows it
 - [ ] As a user I want to edit a card title to correct or update it
 - [ ] As a user I want to delete a card to remove it permanently if it is no longer needed
 - [ ] As a user I want to reorder cards within a column to prioritise my work
-- [ ] As a user I want to be able to leave a comment under a card to let know of my thoughts (Future)
+- [ ] As a user I want to be able to leave a comment under a card to share my thoughts (Future)
 - [ ] As a user I want to be able to add a file to a card (Future)
-- [ ] As a user I want to be able to see the history of card to know what has been changed on it (Future)
+- [ ] As a user I want to be able to see the history of a card to know what has been changed (Future)
 
 ---
 
@@ -65,6 +72,7 @@
 ## Notifications
 
 - [ ] As an owner I want to be able to set webhooks to send notifications when a change happens to a board
+- [ ] As a user I want to receive a notification when a card is assigned to me to stay informed of my responsibilities
 
 ---
 
@@ -72,4 +80,9 @@
 
 - [ ] As an administrator I want to have access to the board settings to manage them
 - [ ] As an administrator I want to manage all users of the instance to maintain control over who has access
+- [ ] As an administrator I want to edit a user account to correct information or reset access
+- [ ] As an administrator I want to delete a user account to remove someone from the instance permanently
 - [ ] As an administrator I want to disable public registration to prevent unknown users from creating accounts
+- [ ] As an administrator I want to configure the instance domain name to enable shareable invite links with a valid URL
+- [ ] As an administrator I want to configure an SMTP server to enable email notifications from my instance
+- [ ] As an administrator I want to configure allowed origins to secure the API against unauthorized domains
