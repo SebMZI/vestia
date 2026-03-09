@@ -18,7 +18,7 @@ A **Member** is a role with permissions defined by the Admin.
 A **Tag** is a quick and simple way to identify a card.
 A **Role** is an object that give limited permissions to a user.
 A **Permission** allows the user to do something that he was originally not able to do.
-A **Webhook** is a URL linked to a Discord channel.
+A **Webhook** is a URL linked to a software such as Discord, Slack or other.
 An **Invite** is a link created by a super admin or an admin allowing someone to join a board
 A **Notification** is an internal alert sent to a member when a relevant event occurs, such as being assigned to a card.
 
@@ -48,15 +48,15 @@ For the developer or company managing personal or professional projects on third
 
 ### Alternatives
 
-| Tool      | Description                                      | Limitation vs Vestia                                                     |
-| --------- | ------------------------------------------------ | ------------------------------------------------------------------------ |
-| Trello    | Cloud-based Kanban tool by Atlassian             | Data stored on American servers, subject to Atlassian's ToS              |
-| Planka    | Self-hosted Kanban board, Trello-like UI         | Limited features, no webhook support, no custom roles                    |
+| Tool      | Description                                      | Limitation vs Vestia                                                      |
+| --------- | ------------------------------------------------ | ------------------------------------------------------------------------- |
+| Trello    | Cloud-based Kanban tool by Atlassian             | Data stored on American servers, subject to Atlassian's ToS               |
+| Planka    | Self-hosted Kanban board, Trello-like UI         | Limited features, no webhook support, no custom roles                     |
 | Nextcloud | Self-hosted productivity suite with a Kanban app | Kanban is a secondary feature, not the core product — UI feels secondary |
-| Wekan     | Open-source self-hosted Kanban                   | Outdated UI, poor user experience, limited active development            |
-| Taiga     | Open-source project management tool              | Complex to self-host, heavier than needed for a simple Kanban use case   |
-| Kanboard  | Minimalist self-hosted Kanban                    | Very basic UI, no modern design, limited collaboration features          |
-| Linear    | Modern cloud project management tool             | Cloud only, no self-hosting option, data stored on third-party servers   |
+| Wekan     | Open-source self-hosted Kanban                   | Outdated UI, poor user experience, limited active development             |
+| Taiga     | Open-source project management tool              | Complex to self-host, heavier than needed for a simple Kanban use case    |
+| Kanboard  | Minimalist self-hosted Kanban                    | Very basic UI, no modern design, limited collaboration features           |
+| Linear    | Modern cloud project management tool             | Cloud only, no self-hosting option, data stored on third-party servers    |
 
 ## Description
 
@@ -100,7 +100,7 @@ Vestia allows Superadmins and Admins to fully manage the columns of a board. Col
 
 ### Manage cards
 
-Vestia provides a comprehensive card management system. Admins can create cards to set up the project structure, while Members can interact with them according to their permissions — moving cards between columns to reflect progress, editing titles and descriptions, assigning cards to responsible members, setting due dates, and archiving or deleting cards when no longer needed.
+Vestia provides a comprehensive card management system. Admins can create cards to set up the project structure, while Members can interact with them according to their permissions — moving cards between columns to reflect progress, editing titles and descriptions, assigning cards to responsible members, setting due dates, and archiving or deleting cards when no longer needed, send comments, see history.
 
 ### Manage tags
 
@@ -111,14 +111,9 @@ Tags provide a quick and visual way to categorise cards on a board. Superadmins 
 The following features are explicitly out of scope for the current version of Vestia. They may be considered for future releases.
 
 - **Single Sign-On (SSO)** — Authentication via third-party identity providers is not supported in this version.
-
 - **Two-Factor Authentication (2FA)** — Additional login security via 2FA will not be implemented at this stage.
-
-- **Card comments** — Members will not be able to leave comments under cards in this version.
-
 - **File attachments** — Attaching files to cards is not supported. This feature would require additional storage management and is deferred to a future release.
-
-- **Card history** — Tracking changes made to a card over time will not be available in this version.
+- **Discussion Board** — Create a discussion board where users can discuss between each others
 
 ## Constraints
 
@@ -136,12 +131,12 @@ The project has no allocated budget. All tools, frameworks, and infrastructure u
 
 ### Technical
 
-| Layer      | Technology        | Justification                                 |
-| ---------- | ----------------- | --------------------------------------------- |
-| Frontend   | Angular           | In training stack, strengthens portfolio      |
-| Backend    | Node.js / Express | Already in stack, fast to prototype           |
-| Database   | PostgreSQL        | Open source, robust, standard for self-hosted |
-| Deployment | Docker / Compose  | Easy to deploy, cross-platform                |
+| Layer      | Technology       | Justification                                 |
+| ---------- | ---------------- | --------------------------------------------- |
+| Frontend   | Angular, shadcn  | In training stack, strengthens portfolio      |
+| Backend    | Nest.js, TypeORM | Same structure as Angular                     |
+| Database   | PostgreSQL       | Open source, robust, standard for self-hosted |
+| Deployment | Docker / Compose | Easy to deploy, cross-platform                |
 
 The application must be fully deployable via Docker Compose on any machine running Docker, without requiring any cloud infrastructure.
 
@@ -170,7 +165,6 @@ Vestia implements the following security measures :
 - **JWT authentication** — all API requests require a valid
   JSON Web Token
 - **Password hashing** — passwords are never stored in plain text and must be hashed using a secure algorithm such as bcrypt
-
 - **Self-hosted by design** — no data ever leaves the user's own infrastructure
 
 ### 7.5 Applicable Standards
