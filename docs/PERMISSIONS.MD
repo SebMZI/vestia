@@ -19,7 +19,6 @@
 | Create board           | ✔️         |       |        |
 | Edit board             | ✔️         | ✔️    |        |
 | Delete board           | ✔️         |       |        |
-| Archive board          | ✔️         | ✔️    |        |
 | Generate invite link   | ✔️         | ✔️    |        |
 | Assign user to board   | ✔️         | ✔️    |        |
 | Remove user from board | ✔️         | ✔️    |        |
