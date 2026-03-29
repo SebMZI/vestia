@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0A9F9F39-4DC7-1843-8DA6-49FAD71A2FB1" containerWithKeyObject="0D23DFE7-6C2F-42D9-B006-865F662082A6" localFKIndex="BD197513-C3CA-FD7C-5225-C842BE3F08E0" name="WEBHOOKS_BOARDS_FK">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:50:30 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<referredTableLongName>BOARDS</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>D700F057-48B0-2A72-E336-371EE414B913</referredTableID>
+<keyObject>52A303FF-149A-FAAA-D744-D56F221421BA</keyObject>
+<referredKeyID>52A303FF-149A-FAAA-D744-D56F221421BA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>board_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

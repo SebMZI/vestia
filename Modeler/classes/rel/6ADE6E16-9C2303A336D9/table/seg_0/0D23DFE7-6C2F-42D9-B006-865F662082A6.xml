@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D23DFE7-6C2F-42D9-B006-865F662082A6" name="WEBHOOKS">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:49:04 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="webhook_id" id="979FFA01-CFE7-ED1B-4415-75CDABA59E7E">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:49:52 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="18F55BDE-487B-99CB-A4B4-3127105F2352">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:49:52 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="link" id="8D7D8671-B83D-F9B9-3890-8452A86B0AFA">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:49:52 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="isActive" id="16196901-1C2B-4571-ADD6-810E8BE9934D">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:49:52 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="board_id" id="C63806DE-73C0-616E-F8D9-9A53BCCB0B63">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:50:30 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A9F9F39-4DC7-1843-8DA6-49FAD71A2FB1" referredColumn="F311A4A8-5F90-9889-64D8-EFD7BE892F50"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F924B0E9-8360-59AB-0127-7A2729EF93FB" name="WEBHOOKS_PK">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:49:52 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="979FFA01-CFE7-ED1B-4415-75CDABA59E7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD197513-C3CA-FD7C-5225-C842BE3F08E0" name="WEBHOOKS_BOARDS_FK">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:50:30 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C63806DE-73C0-616E-F8D9-9A53BCCB0B63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
