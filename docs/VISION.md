@@ -168,7 +168,7 @@ The project has no allocated budget. All tools, frameworks, and infrastructure u
 
 | Layer      | Technology       | Justification                                 |
 | ---------- | ---------------- | --------------------------------------------- |
-| Frontend   | Angular, shadcn  | In training stack, strengthens portfolio      |
+| Frontend   | Angular, zardui  | In training stack, strengthens portfolio      |
 | Backend    | NestJS, TypeORM  | Same structure as Angular                     |
 | Database   | PostgreSQL       | Open source, robust, standard for self-hosted |
 | Deployment | Docker / Compose | Easy to deploy, cross-platform                |

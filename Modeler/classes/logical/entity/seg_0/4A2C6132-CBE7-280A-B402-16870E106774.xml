@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4A2C6132-CBE7-280A-B402-16870E106774" name="ROLE">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-27 21:58:31 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<engineerTo>
+<item key="6ADE6E16-C767-9685-4DC2-9C2303A336D9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="role_id" id="144C2623-F87B-4D81-0BDB-75613915C0EF">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-27 21:58:37 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<engineerTo>
+<item key="6ADE6E16-C767-9685-4DC2-9C2303A336D9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="label" id="E35A771E-DBB4-1D60-5251-CF3DBA5332F2">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-27 21:58:49 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<engineerTo>
+<item key="6ADE6E16-C767-9685-4DC2-9C2303A336D9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_id" id="E939C8B7-8318-F2DE-D18A-EC75D1AE851D">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-27 21:59:43 UTC</createdTime>
+<generatorID>A6DC0FFB-E2A7-0B84-DD66-729DC68B2FF8</generatorID>
+<ownerDesignName>classes</ownerDesignName>
+<engineerTo>
+<item key="6ADE6E16-C767-9685-4DC2-9C2303A336D9" value="true"/>
+</engineerTo>
+<referedAttribute>E223BB3A-2C87-8159-2D03-D304F84AD1D5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="093419BE-7CD5-CF8C-A22E-0C264FCA4849" name="ROLE PK">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-27 21:58:43 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<engineerTo>
+<item key="6ADE6E16-C767-9685-4DC2-9C2303A336D9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>144C2623-F87B-4D81-0BDB-75613915C0EF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

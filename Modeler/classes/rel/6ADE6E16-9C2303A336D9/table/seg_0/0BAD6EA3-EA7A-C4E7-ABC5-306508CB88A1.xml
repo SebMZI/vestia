@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0BAD6EA3-EA7A-C4E7-ABC5-306508CB88A1" name="CARDS">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:08:19 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="card_id" id="5055B6A1-B3A9-827E-7753-9A2076228DED">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:09:14 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="label" id="9BD7986D-51BD-4BA3-EE30-544C103FCD67">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:12:01 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="index" id="B512E1C3-AAD9-69A9-D68F-A81C2F707202">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:12:01 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="isArchived" id="8B26B1CE-7513-679A-D2B7-D24748B0E729">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:12:01 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="9C9A4F93-1AD1-D9AC-8C2A-74242AC13B37">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:12:01 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_at" id="20F6BCF5-1E8E-A511-23A1-B87CAEA1CAFF">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:12:01 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="start_data" id="473E2979-E87A-3597-AF36-D3FA0794D354">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:13:26 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_date" id="CF982BC2-3877-8587-7C69-CC2590717F2E">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:13:26 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="column_id" id="7410F3E6-F5F5-8085-E244-BCE893A20866">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:14:32 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E3A1B76B-A81E-4FEE-78CC-9C5E5F42832A" referredColumn="B29E8893-9A07-05A1-5F39-4818571CD318"/>
+</associations>
+</Column>
+<Column name="COLUMNS_board_id" id="31F9530F-AD1C-D401-530A-7D7FACAE10DE">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:44:35 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E3A1B76B-A81E-4FEE-78CC-9C5E5F42832A" referredColumn="6783EA33-517B-525B-A9A4-46137493316D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="82AB0E16-6B2C-C379-6586-E230056A88A9" name="CARDS_PK">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:15:07 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5055B6A1-B3A9-827E-7753-9A2076228DED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12FC9908-C32E-BE77-3112-53920616C5D9" name="CARDS_COLUMNS_FK">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:18:18 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7410F3E6-F5F5-8085-E244-BCE893A20866"/>
+<colUsage columnID="31F9530F-AD1C-D401-530A-7D7FACAE10DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

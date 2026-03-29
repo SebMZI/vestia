@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B01DB010-50AB-6B7F-ACB3-D5F91CFDE17F" name="USERS">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 13:10:08 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="35480F65-A265-EB90-23A5-DAE9D6C2E550">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:02:46 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="firstname" id="BEE9EE4F-9FA0-ED7F-1F49-39254DD963A2">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:03:43 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastname" id="60FC424F-09F0-1EE3-6E9D-0457DB23B92B">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:03:55 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="C5364DF0-6672-95CD-4EA3-BB8EBF685105">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:04:45 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="00676DFF-ED88-A97C-3FAF-DB084C5BCA5E">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:04:45 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="D2951138-818A-D271-9500-D264B58A28E3">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:04:45 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_at" id="EDD62067-A89C-5DD3-CE6E-C69DF26BCE83">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:04:45 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EB9D0A5A-7A42-7170-4D95-77E15F0B9005" name="USERS_PK">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:02:46 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35480F65-A265-EB90-23A5-DAE9D6C2E550"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4AC4C60-999E-3B6A-6013-4149CAE93A93" name="USERS__UN">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:05:13 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEE9EE4F-9FA0-ED7F-1F49-39254DD963A2"/>
+<colUsage columnID="60FC424F-09F0-1EE3-6E9D-0457DB23B92B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="08DDE876-C69C-3C09-4E25-503D740B1DB5" name="CARDS_HISTORY">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:26:56 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="action" id="F24D4447-249A-3287-265D-2C1CC5E6B3BA">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:27:46 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="C946A8C7-8409-2D65-6206-2ED88EEDBBEE">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:27:46 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="card_id" id="87128A56-7653-8493-3FB7-3003FA83B9E7">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:40:37 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="974C7AB0-7233-FF18-47B5-AA83532D47E5" referredColumn="5055B6A1-B3A9-827E-7753-9A2076228DED"/>
+</associations>
+</Column>
+<Column name="user_id" id="B36765C9-2335-F8F4-8CAC-AB2F22A504CB">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:40:37 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFD2E7F6-5646-0887-3713-EB2D8E0E8BC5" referredColumn="35480F65-A265-EB90-23A5-DAE9D6C2E550"/>
+</associations>
+</Column>
+<Column name="CARDS_column_id" id="5CF97FF4-3E94-CBFE-DDA3-386AEC56F01F">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:42:02 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="history_id" id="3C98A455-B229-A8B6-6294-093E31D9958A">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 18:24:27 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D583400-64E0-4ADB-0553-259BC067A5BC" name="CARDS_HISTORY_PK">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:41:17 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C98A455-B229-A8B6-6294-093E31D9958A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="913EDA56-50E6-ED27-9426-443B44D46D7B" name="CARDS_HISTORY_CARDS_FK">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:40:37 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87128A56-7653-8493-3FB7-3003FA83B9E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60C792B5-F446-7333-C5BB-26C02BB63CC5" name="CARDS_HISTORY_USERS_FK">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:40:37 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B36765C9-2335-F8F4-8CAC-AB2F22A504CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

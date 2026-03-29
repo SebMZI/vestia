@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9FF1E802-0A6E-440B-1C49-8A62ED16226B" name="TAGS">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:50:41 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tag_id" id="C009E7EC-137E-4F22-EB47-8916FA3FC935">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:50:56 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="label" id="F6B8F193-480C-FB18-C57B-E92E26356298">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:51:31 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="board_id" id="1C8432D9-92D6-FC54-590C-13DDFB2AA9A9">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:51:31 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D002278A-FFA5-E4BB-95E4-6E1C3F50A319" referredColumn="F311A4A8-5F90-9889-64D8-EFD7BE892F50"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CDE08A84-AAF1-DC82-56BF-563347847B52" name="TAGS_PK">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:51:31 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C009E7EC-137E-4F22-EB47-8916FA3FC935"/>
+<colUsage columnID="1C8432D9-92D6-FC54-590C-13DDFB2AA9A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DBFAD448-5638-E943-0E78-CD8F64BF8472" name="TAGS_BOARDS_FK">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:51:51 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C8432D9-92D6-FC54-590C-13DDFB2AA9A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

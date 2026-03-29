@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1574E6A7-EEC9-520A-120E-86B102DFE2E9" name="CARD_TAG">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:52:08 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tag_id" id="03B268BB-197F-4A62-287D-A8AF0EB8E183">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:52:41 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="115F9AF5-4037-1E73-59E0-62E37EAE206F" referredColumn="C009E7EC-137E-4F22-EB47-8916FA3FC935"/>
+</associations>
+</Column>
+<Column name="card_id" id="A30FEE41-A2D9-6091-6D21-0F745AF209D0">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:52:41 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46BEDA66-225B-CDED-D33A-976A63B88395" referredColumn="5055B6A1-B3A9-827E-7753-9A2076228DED"/>
+</associations>
+</Column>
+<Column name="column_id" id="C3868C43-DFBB-CFD7-EE03-44871F2F9231">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:55:34 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46BEDA66-225B-CDED-D33A-976A63B88395" referredColumn="7410F3E6-F5F5-8085-E244-BCE893A20866"/>
+</associations>
+</Column>
+<Column name="board_id" id="E6E84BDF-8AA5-849C-13B4-5BFEC53F3AC1">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:56:21 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="115F9AF5-4037-1E73-59E0-62E37EAE206F" referredColumn="1C8432D9-92D6-FC54-590C-13DDFB2AA9A9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F7F83EF3-7AE5-1E59-B926-F2126AD7458B" name="CARD_TAG_PK">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:52:41 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03B268BB-197F-4A62-287D-A8AF0EB8E183"/>
+<colUsage columnID="A30FEE41-A2D9-6091-6D21-0F745AF209D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B468E3C1-5FCE-9120-E017-B66D29A4FC6B" name="CARD_TAG_CARDS_FK">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:56:21 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A30FEE41-A2D9-6091-6D21-0F745AF209D0"/>
+<colUsage columnID="C3868C43-DFBB-CFD7-EE03-44871F2F9231"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69FFD647-96BE-49EE-EFE4-08173A86A7AB" name="CARD_TAG_TAGS_FK">
+<createdBy>mrgys</createdBy>
+<createdTime>2026-03-28 17:56:21 UTC</createdTime>
+<ownerDesignName>classes</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03B268BB-197F-4A62-287D-A8AF0EB8E183"/>
+<colUsage columnID="E6E84BDF-8AA5-849C-13B4-5BFEC53F3AC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
