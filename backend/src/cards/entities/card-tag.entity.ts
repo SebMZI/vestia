@@ -1,6 +1,6 @@
 import { Entity, JoinColumn, ManyToOne, PrimaryColumn } from 'typeorm';
 import { Card } from './card.entity';
-import { Tag } from '../../boards/entities/tag';
+import { Tag } from '../../boards/entities/tag.entity';
 
 @Entity('card_tags')
 export class CardTag {
