@@ -3,8 +3,11 @@ import {
   Entity,
   PrimaryGeneratedColumn,
   CreateDateColumn,
-  UpdateDateColumn,
+  UpdateDateColumn, OneToMany,
 } from 'typeorm';
+import { UserCard } from '../../cards/entities/user-card.entity';
+import { CardHistory } from '../../cards/entities/card_history.entity';
+import { UserBoard } from '../../boards/entities/user-board.entity';
 
 @Entity('users')
 export class User {
@@ -38,4 +41,13 @@ export class User {
 
   @UpdateDateColumn({ type: 'timestamptz' })
   updated_at: Date;
+
+  @OneToMany(() => UserCard, (userCard) => userCard.user)
+  userCards: UserCard[];
+
+  @OneToMany(() => CardHistory, (cardHistory) => cardHistory.user)
+  cardHistory: CardHistory[];
+
+  @OneToMany(() => UserBoard, (userBoard) => userBoard.user)
+  userBoards: UserBoard[];
 }
