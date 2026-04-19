@@ -7,7 +7,7 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 import { Board } from './board.entity';
-import { CardTag } from '../../cards/entities/card-tag';
+import { CardTag } from '../../cards/entities/card-tag.entity';
 
 @Entity('tags')
 export class Tag {
